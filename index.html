@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="main">
+        <div class="heading"><h1>Calculator</h1></div>
+        <div class="body">
+            <div class="inputarea">
+                <input type="text" name="calx" id="calculation" value="">
+            </div>
+            <div class="btnarea">
+                <button id="clearcalc" onclick="clearAll();frontDisplay()" >C</button>
+                <button id="backspace" onclick="backspace();frontDisplay()" >B</button>
+                <button id="operator" value="/" onclick="showOperator(this.value);frontDisplay()">/</button>
+                <button id="operator" value="*" onclick="showOperator(this.value);frontDisplay()">*</button>
+                <button id="numbers" value="7" onclick="showCalc(this.value);frontDisplay()">7</button>
+                <button id="numbers" value="8" onclick="showCalc(this.value);frontDisplay()">8</button>
+                <button id="numbers" value="9" onclick="showCalc(this.value);frontDisplay()" >9</button>
+                <button id="operator" value="-" onclick="showOperator(this.value);frontDisplay()">-</button>
+                <button id="numbers" value="4" onclick="showCalc(this.value);frontDisplay()">4</button>
+                <button id="numbers" value="5" onclick="showCalc(this.value);frontDisplay()">5</button>
+                <button id="numbers" value="6" onclick="showCalc(this.value);frontDisplay()">6</button>
+                <button id="operator" value="+" onclick="showOperator(this.value);frontDisplay()">+</button>
+                <button id="numbers" value="1" onclick="showCalc(this.value);frontDisplay()">1</button>
+                <button id="numbers" value="2" onclick="showCalc(this.value);frontDisplay()">2</button>
+                <button id="numbers" value="3" onclick="showCalc(this.value);frontDisplay()">3</button>
+                <button id="result" class="equalspcl" onclick="result()">=</button>
+                <button id="numbers" class="zerospcl" value="0" onclick="showCalc(this.value);frontDisplay()">0</button>
+                <button id="dot" value="." onclick="showCalc(this.value);frontDisplay()">.</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
